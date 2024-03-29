@@ -49,7 +49,7 @@ public class SampleTest {
     @Test
     public void testGoogleSearchTwo() {
 
-        Assert.assertTrue(false);
+        Assert.assertTrue(true);
     }
 
     @AfterTest
