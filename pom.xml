@@ -29,6 +29,13 @@
       <version>7.7.0</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <version>3.2.5</version>
+    </dependency>
+
   </dependencies>
 
   <build>
@@ -36,9 +43,8 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M5</version> <!-- Use the appropriate version -->
+        <version>3.2.5</version> <!-- Use the appropriate version -->
         <configuration>
-          <argLine>-Djava.awt.headless=true</argLine> <!-- Headless mode for GUI tests -->
           <suiteXmlFiles>
             <suiteXmlFile>testng.xml</suiteXmlFile> <!-- Path to your TestNG XML file -->
           </suiteXmlFiles>

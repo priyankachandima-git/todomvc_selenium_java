@@ -3,7 +3,11 @@
 
     <test name="Selenium Test">
         <classes>
-            <class name="tests.SampleTest"/> <!-- Change the package and class name as per your project -->
+            <class name="tests.SampleTest">
+                <methods> 
+                    <exclude name="testGoogleSearchTwo"></exclude>
+                </methods>
+            </class><!-- Change the package and class name as per your project -->
         </classes>
     </test>
 

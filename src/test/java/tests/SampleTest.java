@@ -46,6 +46,12 @@ public class SampleTest {
         Assert.assertTrue(driver.getTitle().contains("Selenium"));
     }
 
+    @Test
+    public void testGoogleSearchTwo() {
+
+        Assert.assertTrue(false);
+    }
+
     @AfterTest
     public void tearDown() {
         // Close the browser
