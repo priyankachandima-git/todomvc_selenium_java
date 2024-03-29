@@ -1,13 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Selenium Tests Suite">
-
+    <listeners>
+        <listener class-name="CustomTestListener" />
+    </listeners>
     <test name="Selenium Test">
         <classes>
-            <class name="tests.SampleTest">
-                <methods> 
-                    <exclude name="testGoogleSearchTwo"></exclude>
-                </methods>
-            </class><!-- Change the package and class name as per your project -->
+            <class name="tests.SampleTest"/>
         </classes>
     </test>
 
