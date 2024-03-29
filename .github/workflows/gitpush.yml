@@ -1,0 +1,25 @@
+name: Selenium Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11' # Or any other version you're using
+
+      - name: Build with Maven
+        run: mvn clean install -DskipTests
+
+      - name: Run Selenium Tests
+        run: mvn test
